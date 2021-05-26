@@ -1,0 +1,141 @@
+@include title-size('≥');
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	color: $base-text-color;
+	background: $base-background-color;
+	font: #{$font-size-base}/#{$line-height-base} $base-font-family;
+	min-width: $base-min-width;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+//- HTML5 display-role reset for older browsers
+main,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+#wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 $gutter / 2;
+	max-width: $containerWidth + $gutter;
+	width: 100%;
+}
+
+// adaptive images
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+// Typography
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.h {
+	font-family: $headings-font-family;
+	font-weight: $headings-font-weight;
+	margin: 0 0 0.5em;
+	color: $headings-color;
+}
+
+p {
+	margin: 0 0 1em;
+}
+
+a {
+	color: $base-link-color;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+}
+
+// forms
+form,
+fieldset {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='search'],
+input[type='password'],
+input[type='url'],
+textarea {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	box-sizing: border-box;
+	border: 1px solid $form-element-border-color;
+	padding: $form-element-padding;
+	background-color: $form-element-background;
+
+	&:focus {
+		border-color: $form-element-focus-border-color;
+	}
+}
+
+select {
+	-webkit-border-radius: 0;
+}
+
+textarea {
+	resize: none;
+	vertical-align: top;
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='file'],
+input[type='submit'] {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	cursor: pointer;
+}
+
+.btn,
+.button {
+	transition: color .3s, background-color .3s;
+	background-color: $btn-background;
+	color: $btn-color;
+	display: inline-block;
+	vertical-align: top;
+	padding: $btn-padding;
+	font-size: $btn-font-size;
+
+	&:hover {
+		background-color: $btn-color;
+		color: $btn-background;
+	}
+}

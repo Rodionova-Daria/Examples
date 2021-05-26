@@ -1,0 +1,15 @@
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 7px 0 10px;
+
+    p {
+        font-size: 14px;
+        margin: 0;
+        
+        .icon-heart {
+            padding: 0 3px;
+        }
+    }
+}

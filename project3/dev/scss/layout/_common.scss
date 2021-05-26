@@ -1,0 +1,350 @@
+* {
+    box-sizing: border-box;
+    font-family: $text-primary;
+}
+
+
+body {
+    min-width: 320px;
+}
+
+.container {
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+a {
+    transition: color 0.3s ease;
+}
+
+.heading-section {
+    margin-bottom: 70px;
+    text-align: center;
+    color: $light-gray;
+
+    h3 {
+        color: $black;
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        letter-spacing: -0.5px;
+        @include media('>=desktop') {
+            font-size: 40px;
+        }
+    }
+}
+
+.showcase {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 130px 0 30px;
+    display: flex;
+    align-items: center;
+
+    .container {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 25px;
+        color: $white;
+        letter-spacing: -1px;
+
+        @include media('>=tablet') {
+            font-size: 40px;
+        }
+
+        p {
+            margin-bottom: 5px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 25px;
+
+            @include media('>=tablet') {
+                font-size: 55px;
+            }
+
+            @include media('>=desktop') {
+                font-size: 75px;
+                letter-spacing: -2px;
+            }
+        }
+
+        .btn {
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+            padding: 15px 30px;
+            color: $black;
+            background-color: $yellow;
+
+            &:hover {
+                background-color: $white;
+            }
+
+            @include media('>=tablet') {
+                padding: 18px 53px;
+                font-size: 18px;
+            }
+        }
+
+    }
+}
+
+.service {
+    padding: 50px 0 40px;
+
+    @include media('>=desktop') {
+        padding: 100px 0 80px;
+    }
+
+    .service-wrapper {
+        @include media('>=tablet') {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -25px;
+        }
+    }
+
+    .service-col {
+        text-align: center;
+        max-width: 270px;
+        margin: 0 auto 25px;
+
+        @include media('>=tablet') {
+            width: 33.3%;
+            padding: 0 25px;
+            max-width: none;
+        }
+    }
+
+    .service-icon {
+        display: inline-block;
+        width: 73px;
+        height: 72x;
+        margin-bottom: 13px;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .service-info {
+        font-size: 13px;
+        color: $light-gray;
+        line-height: 22px;
+
+        h4 {
+            line-height: 30px;
+            font-size: 18px;
+            letter-spacing: -0.3px;
+            margin-bottom: 5px;
+
+            a {
+                color: $black;
+
+                &:hover {
+                    color: $yellow;
+                }
+            }
+        }
+
+        br {
+            display: none;
+
+            @include media('>=desktop') {
+                display: block;
+            }
+        }
+    }
+
+}
+
+.portfolio {
+    padding: 50px 0 40px;
+    background-color: #f7f7f7;
+
+    @include media('>=desktop') {
+        padding: 100px 0 95px;
+    }
+
+    .portfolio-wrapper {
+        @include media('>=tablet') {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+    }
+
+    .portfolio-col {
+        margin:0 auto 30px;
+        text-align: center;
+        max-width: 320px;
+
+        @include media('>=tablet') {
+            width: 33.3%;
+            padding: 0 15px;
+            max-width: none;
+        }
+    }
+
+    .porfolio-link {
+        display: block;
+        overflow: hidden;
+
+        .portfolio-content {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            padding-top: 105%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        &:hover {
+            box-shadow: 10px 10px 10px $light-gray;
+
+            .portfolio-content {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.about-us {
+    padding: 50px 0 40px;
+
+    @include media('>=desktop') {
+        padding: 115px 0 45px;
+    }
+
+    .about-us-wrapper {
+        padding: 0 30px;
+
+        @include media('>=desktop') {
+            padding: 0 10px;
+        }
+    }
+
+    .content-section {
+        margin-bottom: 60px;
+
+        @include media('>=desktop') {
+            margin-bottom: 85px;
+            display: flex;
+            &:nth-child(even) {
+                justify-content: flex-end;
+
+                .content-wrapper {
+                    justify-content: flex-start;
+                }
+
+                .content {
+                    transform: translateX(-92px);
+                }
+
+                .content-info {
+                    text-align: left;
+                    padding-left: 40px;
+                    padding-right: 0;
+                }
+
+            }
+
+            &:nth-child(odd) {
+                .content {
+                    flex-direction: row-reverse;
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+        }
+    }
+
+    .content-wrapper {
+        @include media('>=desktop') {
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    .content {
+        text-align: center;
+
+        @include media('>=desktop') {
+            display: flex;
+            transform: translateX(92px);
+        }
+    }
+
+    .content-info {
+        max-width: 320px;
+        font-size: 14px;
+        color: $light-gray;
+        margin: 0 auto;
+        line-height: 22px;
+        letter-spacing: -0.2px;
+
+        @include media('>=desktop') {
+            padding-right: 40px;
+            text-align: right;
+            margin: 0;
+        }
+
+        h4 {
+            line-height: 26px;
+            letter-spacing: -0.5px;
+            font-size: 18px;
+
+            .date {
+                letter-spacing: -0.3px;
+                text-transform: uppercase;
+            }
+
+            a {
+                color: $black;
+
+                &:hover {
+                    color: $yellow;
+                }
+            }
+        }
+    }
+
+    .link-pic {
+        display: block;
+        margin: 0 auto;
+        width: 183px;
+        height: 183px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 15px;
+
+        @include media('>=desktop') {
+            margin-bottom: 0;
+        }
+
+        .content-pic {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            height: 183px;
+            transition: transform 0.3s ease;
+        }
+
+        &:hover {
+            .content-pic {
+                transform: scale(1.1);
+            }
+        }
+
+    }
+    
+}

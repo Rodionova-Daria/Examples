@@ -1,0 +1,21 @@
+#footer {
+    padding: 15px 0;
+
+    .author {
+        padding-top: 3px;
+        text-align: center;
+        color: $light-gray;
+        font-size: 14px;
+        letter-spacing: -0.5px;
+
+        a {
+            color: $light-gray;
+            
+            &:hover {
+                color: $yellow;
+            }
+        }
+
+    }
+
+}

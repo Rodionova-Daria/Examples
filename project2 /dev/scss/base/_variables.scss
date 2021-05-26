@@ -1,0 +1,92 @@
+// Media queries
+
+$breakpoints: (
+  'phone': 480px,
+  'tablet': 768px,
+  'desktop': 1024px,
+  'widescreen': 1200px
+);
+
+// Colors
+// Color calculator - http://razorjam.github.io/sasscolourfunctioncalculator/
+// Color names - http://name-of-color.com/
+
+$gray: #262626;
+$black: #000;
+$white: #fff;
+$orange: #e74c3c;
+$blue: #2b3e51;
+$green: #00bd9c;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+$text-primary: 'Montserrat', sans-serif;
+$font-sans-serif: 'Poppins', 'Helvetica Neue', 'Helvetica', sans-serif;
+$extra-font-sans-serif: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
+
+// This is the default html and body font-size for the base rem value.
+$rem-base: 16px;
+
+// Body
+$base-text-color: $black;
+$base-background-color: $white;
+$font-size-base: 16px;
+$line-height-base: 1.6;
+$base-font-family: $font-sans-serif;
+
+$vertical-rhythm: ($line-height-base * 1em);
+
+$base-min-width: 320px;
+
+// Liks
+$base-link-color: $orange;
+
+// Buttons 
+$btn-color: $white;
+$btn-background: $orange;
+$btn-padding: 18px 20px;
+$btn-font-size: inherit !default;
+
+// Forms
+$form-element-padding: 5px;
+$form-element-border-color: $white;
+$form-element-focus-border-color: $white;
+$placeholder-color: $gray;
+$form-element-background: $white;
+
+// Headers size
+$title-palette: (
+  mobile: (
+    'h1': 30,
+    'h2': 24,
+    'h3': 18,
+    'h4': 16,
+    'h5': 14
+  ),
+  desktop: (
+    'h1': 50,
+    'h2': 30,
+    'h3': 22,
+    'h4': 20,
+    'h5': 16
+  )
+);
+
+$headings-font-family: inherit !default;
+$headings-color: inherit !default;
+$headings-font-weight: 700;
+
+$animation-speed: 0.3s;
+
+// Container
+$gutter: 30px;
+$containerWidth: 1260px;
+
+//my project
+$green: #54d154;
+$gray-light: #828181;
+$dark-green: #2b9b2b;
+$light-gray: #f2f1f1;
+$yellow: #ffba00;
+$blue: #089dea;
+$red: #f34d04;

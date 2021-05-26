@@ -1,0 +1,30 @@
+{
+  "name": "build",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "npm i && gulp",
+    "dist": "gulp dist",
+    "update": "npm up"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.1",
+    "browser-sync": "^2.26.14",
+    "del": "^2.2.2",
+    "gulp": "github:gulpjs/gulp#v4.0.0-alpha.3",
+    "gulp-cached": "^1.1.0",
+    "gulp-connect-php": "^1.0.3",
+    "gulp-count": "^0.3.0",
+    "gulp-cssbeautify": "^1.0.1",
+    "gulp-csscomb": "^3.1.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-multi-inheritance": "^1.0.2",
+    "gulp-sourcemaps": "^2.1.1",
+    "gulp-util": "^3.0.7"
+  }
+}
